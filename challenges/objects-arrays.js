@@ -77,7 +77,7 @@ const graduates = [
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = []; //declared new array
-graduates.forEach(function(graduates){
+graduates.forEach(graduates => {
   universities.push(`${graduates.university}`)
 }); //iterates through original array and pushes each universary attribute it finds
 
@@ -93,7 +93,7 @@ The resulting contact information strings should have a space between the first 
 Log the result of your new array. */
 const contactInfo = [];
 
-graduates.forEach(function(graduates){
+graduates.forEach(graduates => {
   contactInfo.push(`${graduates.first_name} ${graduates.email}`)
 }); //iterates through original array and pushes name and email with space
 
@@ -138,7 +138,7 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
-zooAnimals.forEach(function(zooAnimals){
+zooAnimals.forEach(zooAnimals => {
   displayNames.push(`Name: ${zooAnimals.animal_name}, Scientific: ${zooAnimals.scientific_name}`);
 })
 
@@ -151,7 +151,7 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 */
 
 const lowCaseAnimalNames = [];
-zooAnimals.map(function(currentValue){
+zooAnimals.map(currentValue => {
   lowCaseAnimalNames.push(`${currentValue.animal_name.toLowerCase()}`);
 })
 
@@ -163,7 +163,7 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = [];
-lowPopulationAnimals.push(zooAnimals.filter(function(currentValue){ return currentValue.population < 5;}));
+lowPopulationAnimals.push(zooAnimals.filter(currentValue => { return currentValue.population < 5;}));
 
 
 console.log(lowPopulationAnimals);
